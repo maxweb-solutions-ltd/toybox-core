@@ -172,7 +172,8 @@ class Theme
 
         // Enqueue the editor.js file when we're in the block editor.
         add_action('enqueue_block_editor_assets', function () {
-            wp_enqueue_script('editor-js', Assets::getPath("/resources/js/editor.js"), [], '1.0.0', 'true');
+            wp_enqueue_style('toybox-editor-css', Assets::getPath("/resources/scss/editor.scss"), [], '1.0.0');
+            wp_enqueue_script('toybox-editor-js', Assets::getPath("/resources/js/editor.js"), [], '1.0.0', 'true');
         });
 
         add_filter("script_loader_tag", function ($tag, $handle) {
