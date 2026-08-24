@@ -30,6 +30,7 @@
         "jjgrainger/query": "^0.2.0",
         "psr/log": "1.1.4",
         "league/commonmark": "^2.7",
-        "scrivo/highlight.php": "^9.18"
+        "scrivo/highlight.php": "^9.18",
+        "composer-runtime-api": "^2.2"
     }
 }

@@ -66,5 +66,8 @@ class Kernel
         $this->application->add(new MakeBlockCommand());
         $this->application->add(new MakeShortcodeCommand());
         $this->application->add(new MakePatternCommand());
+
+        // Load other commands
+        new CommandLoader()->registerCommands($this->application);
     }
 }

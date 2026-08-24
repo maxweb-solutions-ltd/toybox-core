@@ -240,6 +240,7 @@ class Theme
         Admin::setFooterText();
         AdminBar::setLogo();
         AdminBar::addDocumentationLink();
+        AdminBar::addClearCacheLink();
         Dashboard::hideWidgets();
         Header::cleanup();
         Misc::clearSettingsCacheOnOptionsSave();
